@@ -34,23 +34,8 @@ public class ActivityMain extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
 
-        //构造适配器
-        List<Fragment> fragments=new ArrayList<Fragment>();
-        fragments.add(new Fragment1());
-        fragments.add(new Fragment2());
-        fragments.add(new Fragment3());
-        FragAdapter adapter = new FragAdapter(getSupportFragmentManager(), fragments);
-
-        mTitleList = new ArrayList<String>();// 每个页面的Title数据
-        mTitleList.add("111");
-        mTitleList.add("222");
-        mTitleList.add("333");
-
-        //设定适配器
-        ViewPager vp = (ViewPager)findViewById(R.id.viewpager);
-        vp.setAdapter(adapter);
+        pagerNormal();
     }
 
     private void pagerNormal() {

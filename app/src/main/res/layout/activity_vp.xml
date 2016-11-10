@@ -11,18 +11,12 @@
     tools:context="com.example.zhouzhou.viewpagerdemo.ActivityMain">
 
 
-    <android.support.v4.app.view.ViewPager
+    <com.example.zhouzhou.viewpagerdemo.ViewPagerSupport.ViewPagerT
         android:id="@+id/viewpager"
         android:layout_width="wrap_content"
         android:layout_height="200dip"
         android:layout_gravity="center">
 
-        <android.support.v4.view.PagerTabStrip
-            android:id="@+id/pager_tab"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"/>
-
-    </android.support.v4.app.view.ViewPager>
+    </com.example.zhouzhou.viewpagerdemo.ViewPagerSupport.ViewPagerT>
 
 </RelativeLayout>
